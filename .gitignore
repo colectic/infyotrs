@@ -16,3 +16,6 @@ bootstrap/cache/
 
 _ide_helper.php
 /.idea
+
+# Config files
+config/database.php
