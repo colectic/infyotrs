@@ -1,0 +1,118 @@
+[	
+	{
+		"name": "id",
+		"dbType": "increments",
+		"htmlType": "text",
+		"validations": "required",
+		"searchable": true
+	},
+	{
+		"name": "login",
+		"dbType": "string,200",
+		"htmlType": "text",
+		"validations": "required",
+		"searchable": true
+	},
+	{
+		"name": "email",
+		"dbType": "string,150",
+		"htmlType": "text",
+		"validations": "required",
+		"searchable": true
+	},
+	{
+		"name": "customer_id",
+		"dbType": "string,150",
+		"htmlType": "text",
+		"validations": "required",
+		"searchable": true
+	},
+	{
+		"name": "pw",
+		"dbType": "string,64",
+		"htmlType": "text"
+	},
+	{
+		"name": "title",
+		"dbType": "string,50",
+		"htmlType": "text",
+		"searchable": true
+	},
+	{
+		"name": "first_name",
+		"dbType": "string,100",
+		"htmlType": "text",
+		"validations": "required",
+		"searchable": true
+	},
+	{
+		"name": "last_name",
+		"dbType": "string,100",
+		"htmlType": "text",
+		"validations": "required",
+		"searchable": true
+	},
+	{
+		"name": "phone",
+		"dbType": "string,150",
+		"htmlType": "text",
+		"searchable": true
+	},
+	{
+		"name": "mobile",
+		"dbType": "string,150",
+		"htmlType": "text",
+		"searchable": true
+	},
+	{
+		"name": "email_ext00",
+		"dbType": "string,150",
+		"htmlType": "text",
+		"validations": "required",
+		"searchable": true
+	},
+	{
+		"name": "email_ext01",
+		"dbType": "string,150",
+		"htmlType": "text",
+		"validations": "required",
+		"searchable": true
+	},
+	{
+		"name": "comments",
+		"dbType": "string,250",
+		"htmlType": "text",
+		"searchable": true
+	},
+	{
+		"name": "valid_id",
+		"dbType": "integer",
+		"htmlType": "radio,Valid:1,No valid:0",
+		"validations": "required",
+		"searchable": true
+	},
+	{
+		"name": "create_time",
+		"dbType": "dateTime",
+		"htmlType": "date",
+		"validations": "required"
+	},
+	{
+		"name": "create_by",
+		"dbType": "integer",
+		"htmlType": "text",
+		"validations": "required"
+	},
+	{
+		"name": "change_time",
+		"dbType": "dateTime",
+		"htmlType": "date",
+		"validations": "required"
+	},
+	{
+		"name": "change_by",
+		"dbType": "integer",
+		"htmlType": "text",
+		"validations": "required"
+	}
+]
