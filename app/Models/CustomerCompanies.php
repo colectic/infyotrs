@@ -84,8 +84,8 @@ class CustomerCompanies extends Model
     use SoftDeletes;
 
     public $table = 'customer_company';
+    public $timestamps = false;
     
-
     protected $dates = ['deleted_at'];
 
 
@@ -151,5 +151,5 @@ class CustomerCompanies extends Model
         'change_by' => 'required'
     ];
 
-    
+
 }

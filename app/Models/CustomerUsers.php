@@ -100,7 +100,7 @@ class CustomerUsers extends Model
     use SoftDeletes;
 
     public $table = 'customer_user';
-    
+    public $timestamps = false;
 
     protected $dates = ['deleted_at'];
 
@@ -172,5 +172,5 @@ class CustomerUsers extends Model
         'change_by' => 'required'
     ];
 
-    
+
 }
