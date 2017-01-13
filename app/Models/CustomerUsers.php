@@ -103,7 +103,7 @@ class CustomerUsers extends Model
     public $timestamps = false;
 
     protected $dates = ['deleted_at'];
-
+    protected $primaryKey = 'login';
 
     public $fillable = [
         'id',
