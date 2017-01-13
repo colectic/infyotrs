@@ -85,9 +85,9 @@ class CustomerCompanies extends Model
 
     public $table = 'customer_company';
     public $timestamps = false;
-    
-    protected $dates = ['deleted_at'];
 
+    protected $dates = ['deleted_at'];
+    protected $primaryKey = 'customer_id';
 
     public $fillable = [
         'customer_id',
