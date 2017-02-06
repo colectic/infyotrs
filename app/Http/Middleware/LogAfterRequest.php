@@ -6,7 +6,7 @@ use Closure;
 use Illuminate\Contracts\Routing\TerminableMiddleware;
 use Illuminate\Support\Facades\Log;
 
-class LogAfterRequest implements TerminableMiddleware {
+class LogAfterRequest {
 
     public function handle($request, Closure $next)
     {
