@@ -36,3 +36,5 @@ Route::get('/home', 'HomeController@index');
 Route::resource('customerUsers', 'CustomerUsersController');
 
 Route::resource('customerCompanies', 'CustomerCompaniesController');
+
+Route::resource('tickets', 'TicketController');
