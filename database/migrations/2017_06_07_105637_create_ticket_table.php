@@ -12,7 +12,7 @@ class CreateTicketTable extends Migration
      */
     public function up()
     {
-      Schema::create('customer_user', function (Blueprint $table) {
+      Schema::create('ticket', function (Blueprint $table) {
           $table->string('customer_user', 150);
           $table->string('customer_id', 150);
           $table->integer('type');
@@ -29,6 +29,6 @@ class CreateTicketTable extends Migration
      */
     public function down()
     {
-        //
+        Schema::drop('ticket');
     }
 }
