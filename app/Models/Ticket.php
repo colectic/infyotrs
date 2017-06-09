@@ -60,7 +60,7 @@ class Ticket extends Model
     use SoftDeletes;
 
     public $table = 'tickets';
-    
+
 
     protected $dates = ['deleted_at'];
 
@@ -94,10 +94,10 @@ class Ticket extends Model
     public static $rules = [
         'costumer_user' => 'required',
         'costumer_id' => 'required',
-        'type' => 'numeric required',
+        'type' => 'required',
         'subject' => 'required',
         'body' => 'required'
     ];
 
-    
+
 }
