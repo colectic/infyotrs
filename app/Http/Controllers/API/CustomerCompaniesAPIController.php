@@ -156,7 +156,14 @@ class CustomerCompaniesAPIController extends AppBaseController
     public function show($id)
     {
         /** @var CustomerCompanies $customerCompanies */
-        $customerCompanies = $this->customerCompaniesRepository->findWithoutFail($id);
+
+	if (strpos($id, " - ")) {
+		/* Find by ID */
+		$customerCompanies = $this->customerCompaniesRepository->findWithoutFail($id);
+	} else {
+		/* Find by CIF */
+		$customerCompanies = $this->customerCompaniesRepository->findByField('CIF', $id);	
+	}
 
         if (empty($customerCompanies)) {
             return $this->sendError('Customer Companies not found');
